@@ -1,0 +1,114 @@
+.header {
+    &__navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 60px;
+    }
+    &__logo {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__menu {
+        display: flex;
+    }
+    &__menu-link {
+        margin-left: 15px;
+        a {
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+
+    .promo {
+        min-height: 470px;
+        background-color: #E1EFEE;
+        border-radius: 30px;
+        display: flex;
+        margin: 0 -15px;
+        justify-content: space-between;
+        padding: 0 15px;
+        
+        &__block-l {
+            padding-left: 40px;
+        }
+
+        &__title {
+            margin-top: 116px;
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: 300;
+            span {
+                font-weight: 700;
+            }
+        }
+
+        &__subtitle {
+            font-size: 18px;
+            line-height: 25px;
+            max-width: 395px;
+        }
+
+        &__block-r {
+            position: relative;
+            align-self: center;
+
+        }
+        &__img {
+
+        }
+        &__img-html,
+        &__img-css,
+        &__img-js {
+            position: absolute;
+        }
+        &__img-html {
+            top: 10px;
+            left: 50px;
+        }
+
+        &__img-css {
+            top: 30px;
+            left: 250px;
+        }
+
+        &__img-js {
+            top: 160px;
+            left: 150px;
+        }
+
+
+    }
+
+    .skill-wrapper {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+
+        .skill {
+            border-radius: 10px;
+            padding: 0 5px;
+            padding-top: 34px;  
+            padding-bottom: 38px;
+            margin-top: 30px;
+            max-width: 310px;
+            text-align: center;
+            box-shadow: 0px 0px 15px rgba(82, 82, 82, 0.1);
+            &__title {
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 20px;
+            }
+            &__descr {
+                max-width: 300px;
+                margin-top: 10px;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+    }
+
+}
