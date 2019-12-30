@@ -4,6 +4,7 @@
         --------------
 */
 @import 'modules/normalize';
+@import 'modules/animate';
 @import 'variables/variables';
 /* 
         --------------
@@ -12,24 +13,30 @@
 */
 @import 'blocks/header';
 @import 'blocks/animation';
+@import 'blocks/skill-bar';
+@import 'blocks/skill';
+@import 'blocks/portfolio';
+@import 'blocks/animate-bg';
+@import 'blocks/contacts';
+@import 'blocks/footer';
 
 body {
-	font-family: 'Roboto', sans-serif;
-	color: $color-main;
-	font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        color: $color-main;
+        font-weight: 400;
 }
 
 .container {
-    max-width: 1200px;
-    padding: 0 30px;
-    margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 15px;
+        margin: 0 auto;
 }
 
 a {
-		text-decoration: none;
-		color: $color-main;
+        text-decoration: none;
+        color: $color-main;
 }
 
 ul {
-		list-style: none;
+        list-style: none;
 }
