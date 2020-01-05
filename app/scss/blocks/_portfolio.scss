@@ -14,7 +14,7 @@
 
     &-item {
         margin: 15px;
-        width: calc(33%-30px);
+        width: calc(33% - 30px);
 
         img {
             max-width: 100%;
@@ -26,11 +26,6 @@
         }
     }
 
-    
-
-
-
-
 
 }
 
@@ -38,13 +33,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: f2f2f2;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    background: f2f2f2;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
     width: 100%;
     height:100%;
     z-index: -1;
-    
-   
+
+
 }
 
 .circles{
@@ -65,7 +60,7 @@
     background: rgba(161, 149, 235, 0.2);
     animation: animate 25s linear infinite;
     bottom: -150px;
-    
+
 }
 
 .circles li:nth-child(1){
@@ -160,4 +155,38 @@
         border-radius: 50%;
     }
 
+}
+
+
+@media (max-width: 991px) {
+  .portfolio-item {
+    width: calc(33% - 30px);
+}
+}
+
+@media (max-width: 766px) {
+  .portfolio-item {
+    width: calc(50% - 30px);
+}
+}
+
+@media (max-width: 575px) {
+  .portfolio {
+    padding: 70px 0;
+}
+  .portfolio .title {
+    margin-bottom: 55px;
+    text-align: center;
+}
+  .portfolio-item {
+    width: calc(80% - 30px);
+    margin: 15px auto;
+}
+
+.circles li {
+
+  background: rgba(161,149,235,0.3);
+  animation: animate 20s  infinite;
+  bottom: 100px;
+}
 }

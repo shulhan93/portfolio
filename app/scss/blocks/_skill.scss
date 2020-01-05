@@ -1,67 +1,152 @@
 .skill {
-    margin-top: 100px;
-    background-color: #FCFCFC;
-    padding-top: 85px;
-    padding-bottom: 85px;
+  margin-top: 100px;
+  background-color: #FCFCFC;
+  padding-top: 85px;
+  padding-bottom: 85px;
+
+  .title {
+    margin-bottom: 80px;
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-box {
+    width: 60%;
+  }
+
+  &-img {
+    width: 350px;
+    position: relative;
+    z-index: 2;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      z-index: 2;
+
+    }
+
+    &::before {
+
+      content: '';
+      position: absolute;
+      display: block;
+      background-color: #73B2D8;
+      width: 70%;
+      height: 70%;
+      z-index: -1;
+      top: 6%;
+      left: 20%;
+      border-radius: 50%;
+
+    }
+
+    .brain {
+      position: absolute;
+      display: block;
+      background-color: #FCFCFC;
+      width: 70%;
+      height: 70%;
+      z-index: -1;
+      top: 6%;
+      left: 20%;
+      border-radius: 0%;
+    }
+  }
+
+  .brain-anim {
+    -webkit-animation-name: brain-anim;
+    animation-name: brain-anim;
+    -webkit-animation-delay: 200ms;
+    animation-delay: 500ms;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes brain-anim {
+    0% {
+      height: 70%;
+      width: 70%;
+    }
+
+    100% {
+      height: 15%;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+
+
+}
+
+@media (max-width: 991px) {
+  .skill {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     .title {
-        margin-bottom: 80px;
+      margin-bottom: 65px;
     }
-    &-wrapper {
-        display: flex;
-        justify-content: space-between;
+  }
+
+  .skill-img {
+    width: 300px;
+  }
+
+  .skill-wrapper {
+    align-items: center;
+  }
+
+  .skills-bar-container {
+    width: 57%;
+  }
+
+  .skills-bar-container li .bar-container {
+    height: 21px;
+  }
+
+  .skills-bar-container li .bar-container .progressbar {
+    height: 56%;
+  }
+
+
+}
+
+@media (max-width: 766px) {
+
+  .skill .title {
+    margin-bottom: 47px;
+    text-align: center;
+}
+  .skills-bar-container {
+    width: 55%;
+
+    li {
+      padding: 9px 0;
+      margin-bottom: 0px;
     }
-    &-box {
-        width: 60%;
-    }
-    &-img {
-       width: 30%;
-       position: relative;
-       z-index: 2;
-       img {
-           max-width: 100%;
-           width: 100%;
-           z-index: 2;
+  }
 
-       }
-       &::before {
-        
-            content: '';
-            position: absolute;
-            display: block;
-            background-color: #73B2D8;
-            width: 70%;
-            height: 70%;
-             z-index: -1;    
-             top: 6%;
-             left: 20%;
-             border-radius: 50%;
+  .skills-bar-container li .progressbar-title h3 {
+    font-size: 16px;
+  }
 
-       }
-       .brain {
-           position: absolute;
-           display: block;
-           background-color: #FCFCFC;
-           width: 70%;
-           height: 70%;
-            z-index: -1;    
-            top: 6%;
-            left: 20%;
-            border-radius: 0%;
-       }
-    }
+  .skills-bar-container li .progressbar-title .percent {
+    font-size: 13px;
+  }
 
-    .brain-anim{
-        -webkit-animation-name: brain-anim;
-        animation-name: brain-anim;
-        -webkit-animation-delay: 200ms;
-        animation-delay: 500ms;
-        animation-duration: 4s;
-        animation-fill-mode: forwards;
-      }
-      @keyframes brain-anim{
-          0%{height: 70%; width: 70%;} 
- /*            20%{height: 60%;}
-          50%{height: 50%} */
+  .skill-img {
+    width: 220px;
+  }
 
-          100%{  height: 15%;}}
+}
+
+@media (max-width: 575px) {
+  .skill-wrapper {
+    flex-direction: column-reverse;
+}
 }

@@ -1,14 +1,14 @@
-/* 
+/*
         --------------
-        import modules 
+        import modules
         --------------
 */
 @import 'modules/normalize';
 @import 'modules/animate';
 @import 'variables/variables';
-/* 
+/*
         --------------
-        import blocks 
+        import blocks
         --------------
 */
 @import 'blocks/header';
@@ -19,24 +19,25 @@
 @import 'blocks/animate-bg';
 @import 'blocks/contacts';
 @import 'blocks/footer';
+@import 'blocks/media';
 
 body {
-        font-family: 'Roboto', sans-serif;
-        color: $color-main;
-        font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: $color-main;
+  font-weight: 400;
 }
 
 .container {
-        max-width: 1200px;
-        padding: 0 15px;
-        margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 a {
-        text-decoration: none;
-        color: $color-main;
+  text-decoration: none;
+  color: $color-main;
 }
 
 ul {
-        list-style: none;
+  list-style: none;
 }
