@@ -20,7 +20,9 @@
 @import 'blocks/contacts';
 @import 'blocks/footer';
 @import 'blocks/media';
-@import 'blocks/progress-bar';
+@import 'blocks/skill';
+@import 'blocks/skill-bar';
+@import 'blocks/title';
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -36,12 +38,7 @@ body {
   margin: 0 auto;
 }
 
-.title {
-  display: inline-block;
-  border-bottom: 5px solid #FE5F55;
-  text-transform: uppercase;
-  color: #fff;
-}
+
 
 a {
   text-decoration: none;

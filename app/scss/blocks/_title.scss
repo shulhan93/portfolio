@@ -1,0 +1,14 @@
+.title {
+  display: inline-block;
+  border-bottom: 5px solid #FE5F55;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (max-width: 575px) {
+
+  .title {
+    border-bottom: 4px solid #FE5F55;
+    font-size: 22px;
+  }
+}

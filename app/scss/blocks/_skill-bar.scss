@@ -1,14 +1,17 @@
 
-$li-padding: 15px 0;
+$li-padding: 10px 0;
 
 $background-color: red;
 $progressbar-title-color: #333;
 
-$red: #73B2D8;
+
+
+$red: #263859;
 $blue: #F69A73;
 $purple: #F6E095;
 $orange: #FF6550;
 $green: #27ae60;
+$bg-skill: #6b778d;
 
 $animation-delay: .4s;
 
@@ -31,7 +34,7 @@ $animation-delay: .4s;
 
 .skills-bar-container{
   position: relative;
-  width: 60%;
+  width: 100%;
   min-width: 300px;
   list-style:none;
 
@@ -39,37 +42,38 @@ $animation-delay: .4s;
     position: relative;
     width: 100%;
     padding: $li-padding;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
     .progressbar-title{
       color: $progressbar-title-color;
 
       h3{
         display: inline-block;
-        color: $color-main;
+        color: #fff;
+        font-size: 20px;
 
       }
       .percent{
-        color: $color-main;
+        color: #fff;
         position: absolute;
         right: 0;
       }
     }
 
     .bar-container{
-      background: #F2F2F2;
+      background: $bg-gray;
       position: relative;
       width: 100%;
-      height: 25px;
+      height: 15px;
       margin-top: 5px;
       display: block;
       @include border-radius(50px);
-      padding: 0 10px;
+      padding: 0 5px;
 
       .progressbar{
         position:absolute;
         width:0%;
-        height: 70%;
+        height: 50%;
         @include border-radius(50px);
         top: 50%;
         transform: translateY(-50%);
@@ -114,11 +118,11 @@ $animation-delay: .4s;
   }
 }
 
-.progressred{background-color:$red;}
-.progressblue{background-color:$blue;}
-.progresspurple{background-color:$purple;}
-.progressorange{background-color:$orange;}
-.progressgreen{background-color:$green;}
+.progressred{background-color:$bg-skill;}
+.progressblue{background-color:$bg-skill;}
+.progresspurple{background-color:$bg-skill;}
+.progressorange{background-color:$bg-skill;}
+.progressgreen{background-color:$bg-skill;}
 
 @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
 @-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 80%;}}

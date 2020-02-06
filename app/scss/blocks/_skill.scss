@@ -1,11 +1,9 @@
 .skill {
-  margin-top: 100px;
-  background-color: #FCFCFC;
-  padding-top: 85px;
-  padding-bottom: 85px;
+  padding: 50px 0;
+  background-color: $bg-dark;
 
   .title {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
 
   &-wrapper {
