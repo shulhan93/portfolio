@@ -6,6 +6,7 @@
 @import 'modules/normalize';
 @import 'modules/animate';
 @import 'variables/variables';
+
 /*
         --------------
         import blocks
@@ -13,18 +14,20 @@
 */
 @import 'blocks/header';
 @import 'blocks/animation';
-@import 'blocks/skill-bar';
-@import 'blocks/skill';
+@import 'blocks/about';
 @import 'blocks/portfolio';
 @import 'blocks/animate-bg';
 @import 'blocks/contacts';
 @import 'blocks/footer';
 @import 'blocks/media';
+@import 'blocks/progress-bar';
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: $color-main;
+  color: #fff;
   font-weight: 400;
+  background-color: #24241E;
+
 }
 
 .container {
@@ -33,11 +36,25 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  display: inline-block;
+  border-bottom: 5px solid #FE5F55;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 a {
   text-decoration: none;
-  color: $color-main;
+  color: #fff;
 }
 
 ul {
   list-style: none;
+  padding: 0;
 }
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+

@@ -6,69 +6,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SHULHAN</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/ef9d875dbd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
   <header class="header">
+    <nav class="header__navbar">
+      <div class="container">
+        <div class="header__navbar-wrapper">
+          <div class="header__logo">
+            <a href="#">shulhan</a>
+          </div>
+          <ul class="header__menu">
+            <li class="header__menu-link">
+              <a href="#">Главная</a>
+            </li>
+            <li class="header__menu-link">
+              <a href="#">Обо мне</a>
+            </li>
+            <li class="header__menu-link">
+              <a href="#">Портфолио</a>
+            </li>
+            <li class="header__menu-link">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <div class="container">
-      <nav class="header__navbar">
 
-        <div class="header__logo">
-          <a href="#">shulhan</a>
-        </div>
-        <ul class="header__menu">
-          <li class="header__menu-link">
-            <a href="#">Главная</a>
-          </li>
-          <li class="header__menu-link">
-            <a href="#">Обо мне</a>
-          </li>
-          <li class="header__menu-link">
-            <a href="#">Портфолио</a>
-          </li>
-          <li class="header__menu-link">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <div class="burger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
       <div class="promo">
         <div class="promo__block-l">
           <h1 class="promo__title">
             Привет, я андрей<br>
-            <span>HTML верстальщик</span>
+            <span>HTML <span class="orange">верстальщик</span></span>
           </h1>
           <div class="promo__subtitle">
             Занимаюсь версткой сайтов по готовым макетам, без посадки на CMS
           </div>
         </div>
-        <div id="scene" class="promo__block-r" >
-          <div data-depth="0.2" class="promo__img" >
-            <img src="img/promo.png" alt="">
+        <div id="scene" class="promo__block-r">
+          <div data-depth="0.2" class="promo__img">
+            <img src="img/promo-bl.png" alt="">
           </div>
           <div class="promo__img-html" data-depth="0.8">
-            <img src="img/html.svg" alt="">
+            <img src="img/html.png" alt="">
           </div>
           <div class="promo__img-css" data-depth="0.8">
-            <img src="img/css.svg" alt="">
+            <img src="img/css.png" alt="">
           </div>
           <div class="promo__img-js" data-depth="0.8">
-            <img src="img/js.svg" alt="">
+            <img src="img/js.png" alt="">
           </div>
         </div>
       </div>
       <div class="services-wrapper">
         <div class="services wow fadeInUp">
           <div class="services__img">
-            <img src="img/skill-2.svg" alt="">
+            <img src="img/adapt1.png" alt="">
+            <img src="img/adapt2.png" alt="">
           </div>
           <div class="services__title">
             Адаптивная верстка
@@ -78,9 +84,11 @@
           </div>
         </div>
 
-        <div class="services wow fadeInUp "  data-wow-delay="0.5s">
+        <div class="services wow fadeInUp " data-wow-delay="0.5s">
           <div class="services__img">
-            <img src="img/skill-1.svg" alt="">
+            <img src="img/optimiz1.png" alt="">
+            <img src="img/optimiz2.png" alt="">
+
           </div>
           <div class="services__title">
             Оптимизация сайта
@@ -92,7 +100,8 @@
 
         <div class="services wow fadeInUp " data-wow-delay="0.8s">
           <div class="services__img">
-            <img src="img/skill-3.svg" alt="">
+            <img src="img/support1.png" alt="">
+            <img src="img/support2.png" alt="">
           </div>
           <div class="services__title">
             Поддержка
@@ -104,7 +113,7 @@
       </div>
     </div>
   </header>
-  <section class="skill">
+  <!-- <section class="skill">
     <div class="container">
       <h2 class="title">МОИ НАВЫКИ</h2>
       <div class="skill-wrapper">
@@ -155,50 +164,113 @@
         </div>
       </div>
     </div>
+  </section> -->
+
+
+  <section class="about">
+    <div class="container">
+      <h2 class="title">Обо мне</h2>
+      <div class="about__wrapper">
+        <div class="about__photo" id="scene2">
+          <img data-depth="0.4" src="img/about.png" alt="">
+          <span data-depth="0.9" class="about__photo-background"></span>
+        </div>
+        <div class="about__block-text">
+          <h3 class="about__name">Я Шульган Андрей </h3>
+          <p class="about__description">
+            Привет. Я - HTML верстальщик. Занимаюсь этим делом более полугода. Я умею верстать и умею не верстать, когда
+            просят не верстать. Знаю все технологии, которые нужны в вашей компании, а те которые не нужны, не знаю.
+          </p>
+          <div class="about__block-contaсt">
+            <div class="about__item">
+              <i class="fas fa-map-marker-alt about__item-ico"></i>
+              <span class="about__item-title">Город:</span>
+              <span class="about__item-description">Минск</span>
+            </div>
+
+            <div class="about__item">
+              <i class="fas fa-birthday-cake about__item-ico"></i>
+              <span class="about__item-title">Возраст:</span>
+              <span class="about__item-description">26 лет</span>
+            </div>
+
+            <div class="about__item">
+              <i class="fas fa-phone-alt about__item-ico"></i>
+              <span class="about__item-title">Телефон:</span>
+              <a href="#" class="about__item-description">+375-25-736-57-40</a>
+            </div>
+
+            <div class="about__item">
+              <i class="fas fa-envelope about__item-ico"></i>
+              <span class="about__item-title">E-mail:</span>
+              <a href="#" class="about__item-description">shulhan.andrei@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skill">
+    <div class="container">
+      <div class="skill__wrapper">
+        <div class=" wow fadeInUp progress">
+          <span class="progress__descr"> HTML</span>
+        </div>
+        <div class="progress2  wow fadeInUp">
+          <span class="progress__descr"> CSS</span>
+        </div>
+        <div class="progress3">
+          <span class="progress__descr"> JQUERY</span>
+        </div>
+        <div class="progress4">
+          <span class="progress__descr"> GULP</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="portfolio">
-
     <div class="container">
       <h2 class="title">ПОРТФОЛИО</h2>
       <div class="portfolio-wrapper">
-        <a href="#" class="portfolio-item wow fadeInRight">
+        <a href="#" class="portfolio-item wow fadeInUp">
           <img src="img/portfolio/port-item.png" alt="">
         </a>
 
-        <a href="#" class="portfolio-item wow fadeInRight" data-wow-delay="0.3s">
+        <a href="#" class="portfolio-item wow fadeInUp" data-wow-delay="0.3s">
           <img src="img/portfolio/port-item-1.png" alt="">
         </a>
 
-        <a href="#" class="portfolio-item wow fadeInRight" data-wow-delay="0.5s">
+        <a href="#" class="portfolio-item wow fadeInUp" data-wow-delay="0.5s">
           <img src="img/portfolio/port-item-2.png" alt="">
         </a>
 
-        <a href="#" class="portfolio-item wow fadeInRight" data-wow-delay="0.6s">
+        <a href="#" class="portfolio-item wow fadeInUp" data-wow-delay="0.6s">
           <img src="img/portfolio/port-item-3.png" alt="">
         </a>
 
-        <a href="#" class="portfolio-item wow fadeInRight" data-wow-delay="0.7s">
+        <a href="#" class="portfolio-item wow fadeInUp" data-wow-delay="0.7s">
           <img src="img/portfolio/port-item-4.png" alt="">
         </a>
       </div>
     </div>
 
 
-    <div class="area" >
+    <div class="area">
       <ul class="circles">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
-  </div >
+    </div>
 
   </section>
   <section class="contacts">
@@ -207,12 +279,12 @@
         КОНТАКТЫ
       </h2>
       <div class="contacts-wrapper">
-         <form class="form">
-        <input type="text" placeholder="*ФИО">
-        <input type="text" placeholder="*E-MAIL">
-        <textarea id="message" cols="30" rows="10" placeholder="Введите текст сообщения..."></textarea>
-        <button type="submit">отправить</button>
-      </form>
+        <form class="form">
+          <input type="text" placeholder="*ФИО">
+          <input type="text" placeholder="*E-MAIL">
+          <textarea id="message" cols="30" rows="10" placeholder="Введите текст сообщения..."></textarea>
+          <button type="submit">отправить</button>
+        </form>
         <div class="contacts-block">
           <a href="#" class="telegram">
             <img src="img/ico/telegram.svg" alt="">
@@ -241,6 +313,7 @@
   <script src="js/parallax.min.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/circle-progress.js"></script>
   <script src="js/main.js"></script>
 
 </body>

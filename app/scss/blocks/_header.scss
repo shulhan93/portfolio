@@ -1,16 +1,25 @@
 .header {
+  padding-bottom: 70px;
   &__navbar {
+    border-bottom: 1px solid #474747;
+    margin-bottom: 20px;
+
+  }
+  &__navbar-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-height: 60px;
-
   }
 
   &__logo {
-    font-size: 18px;
+    a {
+      font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+    color: $orange;
+    }
+
   }
 
   &__menu {
@@ -23,7 +32,7 @@
       display: block;
       width: 25px;
       height: 3px;
-      background-color: #000;
+      background-color: #fff;
     }
     span:nth-child(2) {
       margin: 5px 0;
@@ -37,12 +46,17 @@
       text-transform: uppercase;
       font-size: 15px;
       font-weight: 500;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $orange;
+      }
     }
   }
 
   .promo {
     min-height: 470px;
-    background-color: #E1EFEE;
+    background-color: $bg-gray;
     border-radius: 30px;
     display: flex;
     margin: 0 -15px;
@@ -61,6 +75,9 @@
 
       span {
         font-weight: 700;
+        .orange {
+          color: $orange;
+        }
       }
     }
 
@@ -141,10 +158,15 @@
       }
 
       &__img {
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         margin: 0 auto;
         max-width: 63px;
-        border-bottom: 1px solid $color-main;
+        border-bottom: 1px solid $orange;
+        img {
+        }
+        img:nth-child(2) {
+          display: none;
+        }
       }
 
       &__descr {
@@ -158,11 +180,16 @@
       transition: all 0.4s;
 
       &:hover {
+        color: $bg-dark;
         transform: translateY(-10px);
         box-shadow: 0px 0px 15px rgba(82, 82, 82, 0.1);
-
-      }
+        background-color: $orange;
     }
+
+    &:hover .services__img {
+      border-bottom: 1px solid #333;
+  }
   }
 
+}
 }
