@@ -1,8 +1,12 @@
 $(function(){
-var scene = document.getElementById('scene');
+/* var scene = document.getElementById('scene');
 var scene2 = document.getElementById('scene2');
 var parallaxInstance = new Parallax(scene);
-var parallaxInstance = new Parallax(scene2);
+var parallaxInstance = new Parallax(scene2); */
+var scene = document.getElementById('scene');
+ var scene2 = document.getElementById('scene2');
+ new Parallax(scene);
+ new Parallax(scene2);
 new WOW().init();
  var lang = {
     "html": "90%",
@@ -26,61 +30,28 @@ new WOW().init();
 
   });
 
-  $('.burger-menu').on('click', function() {
-    $('.header__menu').slideToggle(300, function(){
-         if( $(this).css('display') === "none"){
-             $(this).removeAttr('style');
-         }
-    });
 
- });
+ $('.burger-menu').click(function(event) {
+   $('.burger-menu, .header__menu').toggleClass('active')
+   $('body').toggleClass('lock')
+ })
 
- $('.header .services').hover(
+ $('.service').hover(
    function() {
-    $(this).find('.services__img img:first-child').css('display', 'none')
-    $(this).find('.services__img img:last-child').css('display', 'block')
+    $(this).find('.service__img img:first-child').css('display', 'none')
+    $(this).find('.service__img img:last-child').css('display', 'block')
 
    },
    function() {
-    $(this).find('.services__img img:first-child').css('display', 'block')
-    $(this).find('.services__img img:last-child').css('display', 'none')
+    $(this).find('.service__img img:first-child').css('display', 'block')
+    $(this).find('.service__img img:last-child').css('display', 'none')
    }
  )
 
- var off = $(".skill__wrapper").offset();
-
-
-
-$('.skill__wrapper').scroll(function() {
- alert('asdasdasd')
-})
-
-
-
-
- new CircleProgress('.progress', {
-	max: 100,
-	value: 60,
-  textFormat: 'percent',
-  animationDuration: 2000
-});
-
-new CircleProgress('.progress2', {
-	max: 100,
-	value: 35,
-	textFormat: 'percent',
-});
-
-new CircleProgress('.progress3', {
-	max: 100,
-	value: 75,
-	textFormat: 'percent',
-});
-
-new CircleProgress('.progress4', {
-	max: 100,
-	value: 40,
-	textFormat: 'percent',
+ $("nav li a").click(function () {
+  elementClick = $(this).attr("href");
+  destination = $(elementClick).offset().top;
+  $("body,html").animate({scrollTop: destination }, 800);
 });
 
 });

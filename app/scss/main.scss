@@ -13,13 +13,14 @@
         --------------
 */
 @import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/services';
 @import 'blocks/animation';
 @import 'blocks/about';
 @import 'blocks/portfolio';
 @import 'blocks/animate-bg';
 @import 'blocks/contacts';
 @import 'blocks/footer';
-@import 'blocks/media';
 @import 'blocks/skill';
 @import 'blocks/skill-bar';
 @import 'blocks/title';
@@ -34,8 +35,14 @@ body {
 
 .container {
   max-width: 1200px;
-  padding: 0 15px;
+  padding: 0 30px;
   margin: 0 auto;
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 0 15px;
+  }
 }
 
 

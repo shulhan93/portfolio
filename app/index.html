@@ -13,43 +13,42 @@
 </head>
 
 <body>
-  <header class="header">
-    <nav class="header__navbar">
-      <div class="container">
-        <div class="header__navbar-wrapper">
-          <div class="header__logo">
-            <a href="#">shulhan</a>
-          </div>
-          <ul class="header__menu">
-            <li class="header__menu-link">
-              <a href="#">Главная</a>
+  <header class="header" >
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="#">shulhan</a>
+        </div>
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li>
+              <a class="header__link" href="#about">Обо мне</a>
             </li>
-            <li class="header__menu-link">
-              <a href="#">Обо мне</a>
+            <li>
+              <a class="header__link" href="#portfolio">Портфолио</a>
             </li>
-            <li class="header__menu-link">
-              <a href="#">Портфолио</a>
-            </li>
-            <li class="header__menu-link">
-              <a href="#">Контакты</a>
+            <li>
+              <a class="header__link" href="#contacts">Контакты</a>
             </li>
           </ul>
-          <div class="burger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </div><!-- ./container -->
+  </header>
 
+
+  <section class="promo">
     <div class="container">
-
-      <div class="promo">
+      <div class="promo__wrapper">
         <div class="promo__block-l">
           <h1 class="promo__title">
             Привет, я андрей<br>
-            <span>HTML <span class="orange">верстальщик</span></span>
+            <span>HTML <span class="orange"data-text="верстальщик" >верстальщик</span></span>
           </h1>
           <div class="promo__subtitle">
             Занимаюсь версткой сайтов по готовым макетам, без посадки на CMS
@@ -70,49 +69,57 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <div class="services">
+    <div class="container">
       <div class="services-wrapper">
-        <div class="services wow fadeInUp">
-          <div class="services__img">
+        <div class="service wow fadeInUp">
+          <div class="service__img">
             <img src="img/adapt1.png" alt="">
             <img src="img/adapt2.png" alt="">
           </div>
-          <div class="services__title">
+          <div class="service__title">
             Адаптивная верстка
           </div>
-          <div class="services__descr">
+          <div class="service__descr">
             Создание адаптивной верстки под различные устройства
           </div>
         </div>
 
-        <div class="services wow fadeInUp " data-wow-delay="0.5s">
-          <div class="services__img">
+        <div class="service wow fadeInUp " data-wow-delay="0.5s">
+          <div class="service__img">
             <img src="img/optimiz1.png" alt="">
             <img src="img/optimiz2.png" alt="">
 
           </div>
-          <div class="services__title">
+          <div class="service__title">
             Оптимизация сайта
           </div>
-          <div class="services__descr">
+          <div class="service__descr">
             Комлпекс работ, по обеспечению максимальной загрузки сайта.
           </div>
         </div>
 
-        <div class="services wow fadeInUp " data-wow-delay="0.8s">
-          <div class="services__img">
+        <div class="service wow fadeInUp " data-wow-delay="0.8s">
+          <div class="service__img">
             <img src="img/support1.png" alt="">
             <img src="img/support2.png" alt="">
           </div>
-          <div class="services__title">
+          <div class="service__title">
             Поддержка
           </div>
-          <div class="services__descr">
+          <div class="service__descr">
             Открыт для внесения изменений, до и после выполненных работ
           </div>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+
+
+
   <!-- <section class="skill">
     <div class="container">
       <h2 class="title">МОИ НАВЫКИ</h2>
@@ -167,7 +174,7 @@
   </section> -->
 
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <h2 class="title">Обо мне</h2>
       <div class="about__wrapper">
@@ -211,60 +218,60 @@
     </div>
   </section>
 
-     <section class="skill">
+  <section class="skill">
     <div class="container">
-    <!--   <h2 class="title">МОИ НАВЫКИ</h2> -->
+      <!--   <h2 class="title">МОИ НАВЫКИ</h2> -->
       <div class="skill-wrapper">
-          <ul class="skills-bar-container">
+        <ul class="skills-bar-container">
 
-            <li class="wow fadeInDown">
-              <div class="progressbar-title">
-                <h3>HTML</h3>
-                <span class="percent" id="html-pourcent"></span>
-              </div>
-              <div class="bar-container">
-                <span class=" wow progressbar progressred progress-html" ></span>
-              </div>
-            </li>
-            <li class="wow fadeInDown">
-              <div class="progressbar-title">
-                <h3>CSS / SASS</h3>
-                <span class="percent" id="css-pourcent"></span>
-              </div>
-              <div class="bar-container">
-                <span class="progressbar progressblue wow progress-css" ></span>
-              </div>
-            </li>
+          <li class="wow fadeInDown">
+            <div class="progressbar-title">
+              <h3>HTML</h3>
+              <span class="percent" id="html-pourcent"></span>
+            </div>
+            <div class="bar-container">
+              <span class=" wow progressbar progressred progress-html"></span>
+            </div>
+          </li>
+          <li class="wow fadeInDown">
+            <div class="progressbar-title">
+              <h3>CSS / SASS</h3>
+              <span class="percent" id="css-pourcent"></span>
+            </div>
+            <div class="bar-container">
+              <span class="progressbar progressblue wow progress-css"></span>
+            </div>
+          </li>
 
-            <li class="wow fadeInDown">
-              <div class="progressbar-title">
-                <h3>JavaScript / jQuery</h3>
-                <span class="percent" id="javascript-pourcent"></span>
-              </div>
-              <div class="bar-container">
-                <span class="progressbar progresspurple wow progress-javascript" ></span>
-              </div>
-            </li>
+          <li class="wow fadeInDown">
+            <div class="progressbar-title">
+              <h3>JavaScript / jQuery</h3>
+              <span class="percent" id="javascript-pourcent"></span>
+            </div>
+            <div class="bar-container">
+              <span class="progressbar progresspurple wow progress-javascript"></span>
+            </div>
+          </li>
 
-            <li class="wow fadeInDown">
-              <div class="progressbar-title">
-                <h3>GULP</h3>
-                <span class="percent" id="php-pourcent"></span>
-              </div>
-              <div class="bar-container">
-                <span class="progressbar progressorange wow progress-php"></span>
-              </div>
-            </li>
-          </ul>
-     <!--    <div class="skill-img">
+          <li class="wow fadeInDown">
+            <div class="progressbar-title">
+              <h3>GULP</h3>
+              <span class="percent" id="php-pourcent"></span>
+            </div>
+            <div class="bar-container">
+              <span class="progressbar progressorange wow progress-php"></span>
+            </div>
+          </li>
+        </ul>
+           <div class="skill-img">
           <img src="img/skill-img.png" alt="">
           <span class="brain wow brain-anim"></span>
-        </div> -->
+        </div>
       </div>
     </div>
   </section>
 
-<!--   <section class="skill">
+  <!--   <section class="skill">
     <div class="container">
       <div class="skill__wrapper">
         <div class=" wow fadeInUp progress">
@@ -283,7 +290,7 @@
     </div>
   </section> -->
 
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="container">
       <h2 class="title">ПОРТФОЛИО</h2>
       <div class="portfolio-wrapper">
@@ -326,7 +333,7 @@
     </div>
 
   </section>
-  <section class="contacts">
+  <section class="contacts" id="contacts">
     <div class="container">
       <h2 class="title">
         КОНТАКТЫ
